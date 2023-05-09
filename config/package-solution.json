@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "tdd-spfx-client-side-solution",
+    "id": "3d61f5fa-f246-48fb-b804-53f323fd06b6",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.17.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "TDD-SPFX description"
+      },
+      "longDescription": {
+        "default": "TDD-SPFX description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "tdd-spfx Feature",
+        "description": "The feature that activates elements of the tdd-spfx solution.",
+        "id": "cfb64d88-cd56-4f52-87be-c02be90ef108",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/tdd-spfx.sppkg"
+  }
+}
