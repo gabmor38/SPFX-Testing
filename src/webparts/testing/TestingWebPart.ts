@@ -8,22 +8,22 @@ import {
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import { IReadonlyTheme } from '@microsoft/sp-component-base';
 
-import * as strings from 'TestingSpfxWebPartStrings';
-import TestingSpfx from './components/TestingSpfx';
-import { ITestingSpfxProps } from './components/ITestingSpfxProps';
+import * as strings from 'TestingWebPartStrings';
+import Testing from './components/Testing';
+import { ITestingProps } from './components/ITestingProps';
 
-export interface ITestingSpfxWebPartProps {
+export interface ITestingWebPartProps {
   description: string;
 }
 
-export default class TestingSpfxWebPart extends BaseClientSideWebPart<ITestingSpfxWebPartProps> {
+export default class TestingWebPart extends BaseClientSideWebPart<ITestingWebPartProps> {
 
   private _isDarkTheme: boolean = false;
   private _environmentMessage: string = '';
 
   public render(): void {
-    const element: React.ReactElement<ITestingSpfxProps> = React.createElement(
-      TestingSpfx,
+    const element: React.ReactElement<ITestingProps> = React.createElement(
+      Testing,
       {
         description: this.properties.description,
         isDarkTheme: this._isDarkTheme,

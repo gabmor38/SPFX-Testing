@@ -1,4 +1,4 @@
-declare interface ITestingSpfxWebPartStrings {
+declare interface ITestingWebPartStrings {
   PropertyPaneDescription: string;
   BasicGroupName: string;
   DescriptionFieldLabel: string;
@@ -12,7 +12,7 @@ declare interface ITestingSpfxWebPartStrings {
   AppOutlookEnvironment: string;
 }
 
-declare module 'TestingSpfxWebPartStrings' {
-  const strings: ITestingSpfxWebPartStrings;
+declare module 'TestingWebPartStrings' {
+  const strings: ITestingWebPartStrings;
   export = strings;
 }

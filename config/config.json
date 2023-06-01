@@ -2,17 +2,17 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "testing-spfx-web-part": {
+    "testing-web-part": {
       "components": [
         {
-          "entrypoint": "./lib/webparts/testingSpfx/TestingSpfxWebPart.js",
-          "manifest": "./src/webparts/testingSpfx/TestingSpfxWebPart.manifest.json"
+          "entrypoint": "./lib/webparts/testing/TestingWebPart.js",
+          "manifest": "./src/webparts/testing/TestingWebPart.manifest.json"
         }
       ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "TestingSpfxWebPartStrings": "lib/webparts/testingSpfx/loc/{locale}.js"
+    "TestingWebPartStrings": "lib/webparts/testing/loc/{locale}.js"
   }
 }

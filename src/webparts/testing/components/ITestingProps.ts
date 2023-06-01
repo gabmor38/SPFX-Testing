@@ -1,4 +1,4 @@
-export interface ITestingSpfxProps {
+export interface ITestingProps {
   description: string;
   isDarkTheme: boolean;
   environmentMessage: string;

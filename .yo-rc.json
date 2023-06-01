@@ -7,13 +7,13 @@
       "@microsoft/microsoft-graph-client": "3.0.2",
       "@microsoft/teams-js": "2.9.1"
     },
-    "version": "1.17.1",
-    "libraryName": "tdd-spfx",
-    "libraryId": "3d61f5fa-f246-48fb-b804-53f323fd06b6",
+    "version": "1.17.2",
+    "libraryName": "testing-spfx",
+    "libraryId": "528adbbc-997f-46c5-a33f-4cf50e36f640",
     "environment": "spo",
     "packageManager": "npm",
-    "solutionName": "TDD-SPFX",
-    "solutionShortDescription": "TDD-SPFX description",
+    "solutionName": "Testing-SPFX",
+    "solutionShortDescription": "Testing-SPFX description",
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "componentType": "webpart"

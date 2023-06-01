@@ -1,8 +1,8 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "tdd-spfx-client-side-solution",
-    "id": "3d61f5fa-f246-48fb-b804-53f323fd06b6",
+    "name": "testing-spfx-client-side-solution",
+    "id": "528adbbc-997f-46c5-a33f-4cf50e36f640",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
@@ -12,14 +12,14 @@
       "websiteUrl": "",
       "privacyUrl": "",
       "termsOfUseUrl": "",
-      "mpnId": "Undefined-1.17.1"
+      "mpnId": "Undefined-1.17.2"
     },
     "metadata": {
       "shortDescription": {
-        "default": "TDD-SPFX description"
+        "default": "Testing-SPFX description"
       },
       "longDescription": {
-        "default": "TDD-SPFX description"
+        "default": "Testing-SPFX description"
       },
       "screenshotPaths": [],
       "videoUrl": "",
@@ -27,14 +27,14 @@
     },
     "features": [
       {
-        "title": "tdd-spfx Feature",
-        "description": "The feature that activates elements of the tdd-spfx solution.",
-        "id": "cfb64d88-cd56-4f52-87be-c02be90ef108",
+        "title": "testing-spfx Feature",
+        "description": "The feature that activates elements of the testing-spfx solution.",
+        "id": "5b34d272-9b8b-4e3e-9ff5-4b62e4441841",
         "version": "1.0.0.0"
       }
     ]
   },
   "paths": {
-    "zippedPackage": "solution/tdd-spfx.sppkg"
+    "zippedPackage": "solution/testing-spfx.sppkg"
   }
 }

@@ -1,10 +1,10 @@
 import * as React from 'react';
-import styles from './TestingSpfx.module.scss';
-import { ITestingSpfxProps } from './ITestingSpfxProps';
+import styles from './Testing.module.scss';
+import { ITestingProps } from './ITestingProps';
 import { escape } from '@microsoft/sp-lodash-subset';
 
-export default class TestingSpfx extends React.Component<ITestingSpfxProps, {}> {
-  public render(): React.ReactElement<ITestingSpfxProps> {
+export default class Testing extends React.Component<ITestingProps, {}> {
+  public render(): React.ReactElement<ITestingProps> {
     const {
       description,
       isDarkTheme,
@@ -14,7 +14,7 @@ export default class TestingSpfx extends React.Component<ITestingSpfxProps, {}> 
     } = this.props;
 
     return (
-      <section className={`${styles.testingSpfx} ${hasTeamsContext ? styles.teams : ''}`}>
+      <section className={`${styles.testing} ${hasTeamsContext ? styles.teams : ''}`}>
         <div className={styles.welcome}>
           <img alt="" src={isDarkTheme ? require('../assets/welcome-dark.png') : require('../assets/welcome-light.png')} className={styles.welcomeImage} />
           <h2>Well done, {escape(userDisplayName)}!</h2>
