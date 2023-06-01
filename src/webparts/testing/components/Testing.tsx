@@ -1,7 +1,14 @@
 import * as React from 'react';
-import styles from './Testing.module.scss';
+// import styles from './Testing.module.scss';
 import { ITestingProps } from './ITestingProps';
 import { escape } from '@microsoft/sp-lodash-subset';
+// mocking these until modules are corrected
+// import welcomeDark from '../assets/welcome-dark.png' ; 
+// import welcomeLight from '../assets/welcome-light.png'
+const styles = { testing: '', teams: '', welcome: '', welcomeImage: '', links: '' };
+
+const WelcomeDark = "(dark)";
+const WelcomeLight = "(light)";
 
 export default class Testing extends React.Component<ITestingProps, {}> {
   public render(): React.ReactElement<ITestingProps> {
@@ -16,8 +23,8 @@ export default class Testing extends React.Component<ITestingProps, {}> {
     return (
       <section className={`${styles.testing} ${hasTeamsContext ? styles.teams : ''}`}>
         <div className={styles.welcome}>
-          <img alt="" src={isDarkTheme ? require('../assets/welcome-dark.png') : require('../assets/welcome-light.png')} className={styles.welcomeImage} />
-          <h2>Well done, {escape(userDisplayName)}!</h2>
+          <img alt="" src={isDarkTheme ? WelcomeDark : WelcomeLight} className={styles.welcomeImage} />
+          <h2 data-testid="well-done">Well done, {escape(userDisplayName)}!</h2>
           <div>{environmentMessage}</div>
           <div>Web part property value: <strong>{escape(description)}</strong></div>
         </div>
