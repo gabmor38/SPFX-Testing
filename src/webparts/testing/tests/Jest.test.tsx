@@ -1,25 +1,20 @@
 ///<reference types="jest"/>
 
+/**
+ * @jest-environment jsdom
+ */
+
 import * as React from 'react';
-import { ReactWrapper } from 'enzyme';
-
-import Testing from '../components/Testing';
-import { ITestingProps } from '../components/ITestingProps';
-
-// configure({ adapter: new Adapter() });
+import { render } from '@testing-library/react';
+import TestChild2 from '../components/TestChild2';
 
 
-describe('<Testing/>', () =>  {
-
-  let reactComponent : ReactWrapper<ITestingProps>;
- 
-  it('Testing should render a welcome title', () => {
-    
-      const cssSelector: string =  'h3';
-
-      const text = reactComponent.find(cssSelector).text();
-
-      expect(text).toBe('Welcome to SharePoint Framework!')
-  });
+describe ("Child Component", () => {
+  it ("should render child component", () => {
+    render (<TestChild2/>)
+  })
 })
+
+
+
 
