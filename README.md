@@ -2,13 +2,13 @@
 
 ## Summary
 
-Short summary on functionality and used technologies.
-
-[picture of the solution in action, if possible]
+Boilerplate for testing webparts.
 
 ## Used SharePoint Framework Version
 
 ![version](https://img.shields.io/badge/version-1.17.2-green.svg)
+
+##
 
 ## Applies to
 
@@ -17,15 +17,20 @@ Short summary on functionality and used technologies.
 
 > Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
 
-## Prerequisites
+## Dependencies
 
-> Any special pre-requisites?
+- Jest
+- React Testing Library
+- @types/jest
+- ts-jest
+
+
 
 ## Solution
 
 | Solution    | Author(s)                                               |
 | ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
+| folder name | gabmor38 |
 
 ## Version history
 
