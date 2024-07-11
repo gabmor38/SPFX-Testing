@@ -3,7 +3,8 @@ import styles from './Testing.module.scss';
 import { ITestingProps } from './ITestingProps';
 //import { escape } from '@microsoft/sp-lodash-subset';
 
-const Testing = (props: ITestingProps) => {
+const Testing: React.FunctionComponent<ITestingProps>= (props) => {
+  
   return (
     <section>
       <div>
